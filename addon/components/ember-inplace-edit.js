@@ -2,6 +2,7 @@ import Ember from 'ember';
 import layout from '../templates/components/ember-inplace-edit';
 
 export default Ember.Component.extend({
+  classNames: ['ember-inplace-edit-default'],
   layout: layout,
   type: 'input',
   disabled: false,

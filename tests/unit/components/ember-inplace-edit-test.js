@@ -19,3 +19,11 @@ test('it renders', function(assert) {
   this.render();
   assert.equal(component._state, 'inDOM');
 });
+
+test('it use the `ember-inplace-edit-default` CSS class', function(assert) {
+  assert.expect(1);
+  var component = this.subject();
+
+  this.render();
+  assert.ok(component.$().attr('class').indexOf('ember-inplace-edit-default') !== -1);
+});
